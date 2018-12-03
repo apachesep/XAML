@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XAML1.LoginPage">
+    <Grid>
+        <Image 
+            Aspect="AspectFill"
+            Source="LoginBlue.png"/>
+        <StackLayout
+            Margin="0,84,0,0"
+            Orientation="Vertical"
+            Spacing="0">
+            <Image
+                Margin="0,0,0,0"
+                HorizontalOptions="Center" VerticalOptions="Start"
+                WidthRequest="277.6" HeightRequest="93.9"
+                Source="EventoLogo.png"/>
+            <Label
+                Margin="31,25,31,0"
+                HorizontalOptions="Start" VerticalOptions="Start"
+                Text="Email"
+                TextColor="White"
+                FontSize="20"/>
+            <Entry
+                Margin="31,0,31,0"
+                Placeholder="請輸入帳號"
+                TextColor="White" PlaceholderColor="#AFFF"
+                />
+            <Label
+                Margin="31,24,31,0"
+                HorizontalOptions="Start" VerticalOptions="Start"
+                Text="Password"
+                TextColor="White"
+                FontSize="20"/>
+            <Entry
+                Margin="31,0,31,0"
+                Placeholder="請輸入密碼"
+                TextColor="White" PlaceholderColor="#AFFF"
+                />
+            <Label
+                Margin="31,23.5,31,0"
+                HorizontalOptions="Center" VerticalOptions="Start"
+                Text="Forget your password?"
+                TextColor="White"
+                FontSize="16"/>
+            <Grid
+                Margin="0,39,0,0"
+                HorizontalOptions="Center" VerticalOptions="Start"
+                RowSpacing="0" ColumnSpacing="0"
+                >
+                <Image
+                    Source="LoginButtonBackground.png"/>
+                <Label
+                    HorizontalOptions="Center" VerticalOptions="Center"
+                    Text="LOG IN"
+                    TextColor="#1BA8EA"
+                    FontSize="15"/>
+            </Grid>
+            <Grid
+                Margin="0,24,0,0"
+                HorizontalOptions="Center" VerticalOptions="Start"
+                RowSpacing="0" ColumnSpacing="0"
+                >
+                <Image
+                    Source="LoginButtonBackground.png"/>
+                <StackLayout
+                    Orientation="Horizontal"
+                    HorizontalOptions="Center" VerticalOptions="Center"
+                    Spacing="0">
+                    <Image
+                        VerticalOptions="Center"
+                        Source="facebook.png"/>
+                    <Label
+                        Margin="19.1,0,0,0"
+                        Text="LOGIN WITH FACEBOOK"
+                        TextColor="#385C8E"
+                        FontSize="15"/>
+
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </Grid>
+</ContentPage>
