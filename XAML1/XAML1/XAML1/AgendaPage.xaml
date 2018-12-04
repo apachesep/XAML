@@ -1,12 +1,492 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="XAML1.AgendaPage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+             x:Class="XAML1.AgendaPage"
+             Title="Agenda" BackgroundColor="#EEEEEE">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="12"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="56"/>
+        </Grid.RowDefinitions>
+  
+        <Grid
+            Grid.Row="0"
+            Margin="13.7,13,13.7,8.8"
+            VerticalOptions="Center"
+            >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid
+                Grid.Column="0"
+                HorizontalOptions="Start" VerticalOptions="Center">
+                <Image
+                    HorizontalOptions="Center" VerticalOptions="Center"
+                    Source="daybox.png"/>
+                <Label
+                    HorizontalOptions="Center" VerticalOptions="Center" VerticalTextAlignment="Center"
+                    Margin="0,-5,0,0"
+                    Text="Day 1"
+                    FontSize="13"
+                    TextColor="#00AEFF"/>
+            </Grid>
+
+            <Grid
+                Grid.Column="1"
+                HorizontalOptions="Center" VerticalOptions="Center">
+                <Image
+                    HorizontalOptions="Center" VerticalOptions="Center"
+                    Source="daybox.png"/>
+                <Label
+                    HorizontalOptions="Center" VerticalOptions="Center" VerticalTextAlignment="Center"
+                    Margin="0,-5,0,0"
+                    Text="Day 2"
+                    FontSize="13"
+                    TextColor="#00AEFF"/>
+            </Grid>
+            <Grid
+                Grid.Column="2"
+                HorizontalOptions="End" VerticalOptions="Center">
+                <Image
+                    HorizontalOptions="Center" VerticalOptions="Center"
+                    Source="daybox.png"/>
+                <Label
+                    HorizontalOptions="Center" VerticalOptions="Center" VerticalTextAlignment="Center"
+                    Margin="0,-5,0,0"
+                    Text="Day 3"
+                    FontSize="13"
+                    TextColor="#00AEFF"/>
+            </Grid>
+        </Grid>
+
+        <Grid
+            Grid.Row="1"
+            Margin="13.7,0,13.7,0"
+            VerticalOptions="Center"
+            >
+            <StackLayout
+                Spacing="0"
+                Orientation="Horizontal"
+                >
+                <Image
+                    Margin="10.3,0,0,0"
+                    VerticalOptions="Center"
+                    Source="sessions.png"/>
+                <Label
+                    Margin="7,-2,0,0"
+                    VerticalOptions="Center"
+                    Text="Sessions"
+                    TextColor="#565656"
+                    FontSize="13"/>
+                <Image
+                    Margin="34,0,0,0"
+                    VerticalOptions="Center"
+                    Source="workshop.png"/>
+                <Label
+                    Margin="7,-2,0,0"
+                    VerticalOptions="Center"
+                    Text="Workshop"
+                    TextColor="#565656"
+                    FontSize="13"/>
+                <Image
+                    Margin="34,0,0,0"
+                    VerticalOptions="Center"
+                    Source="advanced.png"/>
+                <Label
+                    Margin="7,-2,0,0"
+                    VerticalOptions="Center"
+                    Text="Advanced Sessions"
+                    TextColor="#565656"
+                    FontSize="13"/>
+            </StackLayout>
+        </Grid>
+
+        <ScrollView
+            Grid.Row="2"
+            >
+            <StackLayout
+                Orientation="Vertical"
+                Spacing="0"
+                >
+                <StackLayout
+                    Spacing="0">
+                    <Grid
+                        RowSpacing="0" ColumnSpacing="0"
+                        Margin="13.7,0"
+                        HeightRequest="111">
+                        <BoxView
+                            Margin="14.9,0"
+                            Color="White"/>
+                        <Image
+                            HorizontalOptions="Start"
+                            Source="rightbox1.png"/>
+                        <Image
+                            HorizontalOptions="End"
+                            Source="leftbluebox.png"/>
+                        <Image
+                            HorizontalOptions="End"
+                            Source="speaker5.png"/>
+                        <Grid
+                            RowSpacing="0" ColumnSpacing="0"
+                            HorizontalOptions="End" VerticalOptions="End"
+                            >
+                            <Image
+                                Source="livered2.png"/>
+                            <Image
+                                HorizontalOptions="Start" VerticalOptions="Center"
+                                Margin="17,0,0,0"
+                                Source="ngvngvnv.png"/>
+                            <Label
+                                HorizontalOptions="End" VerticalOptions="Center"
+                                Margin="0,-2,18.8,0"
+                                Text="Live"
+                                TextColor="White"
+                                FontSize="15"
+                                FontAttributes="Bold"/>
+                        </Grid>
+
+                        <Grid
+                            RowSpacing="0" ColumnSpacing="0"
+                            Margin="14.9, 0, 82.8,0"
+                            >
+                            <StackLayout
+                                Orientation="Vertical"
+                                Spacing="0"
+                                >
+                                <Label
+                                    HeightRequest="39"
+                                    Margin="14,0,60,0"
+                                    Text="The story behind the Space X"
+                                    FontSize="16"
+                                    TextColor="#565656"/>
+                                <StackLayout
+                                    Orientation="Horizontal"
+                                    Margin="0,5,0,0"
+                                    Spacing="0"
+                                    >
+                                    <Image
+                                        Margin="14,0,0,0"
+                                        Source="bookmark.png"/>
+                                    <Label
+                                        Margin="4,0,0,0"
+                                        Text="Business"
+                                        FontSize="12"
+                                        />
+                                </StackLayout>
+                                <StackLayout
+                                    Orientation="Horizontal"
+                                    Margin="0,5,0,0"
+                                    Spacing="0"
+                                    >
+                                    <Image
+                                        Margin="14,0,0,0"
+                                        Source="wallclock.png"/>
+                                    <Label
+                                        Margin="4,0,0,0"
+                                        Text="10 AM - 12 AM"
+                                        FontSize="12"
+                                    />
+                                </StackLayout>
+                                <StackLayout
+                                    Orientation="Horizontal"
+                                    Margin="0,5,0,0"
+                                    Spacing="0"
+                                    >
+                                    <Image
+                                        Margin="14,0,0,0"
+                                        Source="placeholder.png"/>
+                                    <Label
+                                        Margin="4,0,0,0"
+                                        Text="Great Hall"
+                                        FontSize="12"
+                                    />
+                                </StackLayout>
+                            </StackLayout>
+                            <Image
+                            Margin="0,0,15,0"
+                            HorizontalOptions="End" VerticalOptions="Center"
+                            Source="AgendaItemCheck.png"/>
+                        </Grid>
+                    </Grid>
+                </StackLayout>
+
+                <StackLayout
+                    Margin="0,15,0,0"
+                    Spacing="0">
+                    <Grid
+                        RowSpacing="0" ColumnSpacing="0"
+                        Margin="13.7,0"
+                        HeightRequest="111">
+                        <BoxView
+                            Margin="14.9,0"
+                            Color="White"/>
+                        <Image
+                            HorizontalOptions="Start"
+                            Source="rightbox1.png"/>
+                        <Image
+                            HorizontalOptions="End"
+                            Source="leftbluebox.png"/>
+                        <Image
+                            HorizontalOptions="End"
+                            Source="speaker4.png"/>
+                        <Grid
+                            RowSpacing="0" ColumnSpacing="0"
+                            HorizontalOptions="End" VerticalOptions="End"
+                            IsVisible="False"
+                            >
+                            <Image
+                                Source="livered2.png"/>
+                            <Image
+                                HorizontalOptions="Start" VerticalOptions="Center"
+                                Margin="17,0,0,0"
+                                Source="ngvngvnv.png"/>
+                            <Label
+                                HorizontalOptions="End" VerticalOptions="Center"
+                                Margin="0,-2,18.8,0"
+                                Text="Live"
+                                TextColor="White"
+                                FontSize="15"
+                                FontAttributes="Bold"/>
+                        </Grid>
+
+                        <Grid
+                            RowSpacing="0" ColumnSpacing="0"
+                            Margin="14.9, 0, 82.8,0"
+                            >
+                            <StackLayout
+                                Orientation="Vertical"
+                                Spacing="0"
+                                >
+                                <Label
+                                    HeightRequest="39"
+                                    Margin="14,0,60,0"
+                                    Text="Nine key highlights from Bill Gates"
+                                    FontSize="16"
+                                    TextColor="#565656"/>
+                                <StackLayout
+                                    Orientation="Horizontal"
+                                    Margin="0,5,0,0"
+                                    Spacing="0"
+                                    >
+                                    <Image
+                                        Margin="14,0,0,0"
+                                        Source="bookmark.png"/>
+                                    <Label
+                                        Margin="4,0,0,0"
+                                        Text="Business"
+                                        FontSize="12"
+                                        />
+                                </StackLayout>
+                                <StackLayout
+                                    Orientation="Horizontal"
+                                    Margin="0,5,0,0"
+                                    Spacing="0"
+                                    >
+                                    <Image
+                                        Margin="14,0,0,0"
+                                        Source="wallclock.png"/>
+                                    <Label
+                                        Margin="4,0,0,0"
+                                        Text="10 AM - 12 AM"
+                                        FontSize="12"
+                                    />
+                                </StackLayout>
+                                <StackLayout
+                                    Orientation="Horizontal"
+                                    Margin="0,5,0,0"
+                                    Spacing="0"
+                                    >
+                                    <Image
+                                        Margin="14,0,0,0"
+                                        Source="placeholder.png"/>
+                                    <Label
+                                        Margin="4,0,0,0"
+                                        Text="Great Hall"
+                                        FontSize="12"
+                                    />
+                                </StackLayout>
+                            </StackLayout>
+                            <Image
+                            Margin="0,0,15,0"
+                            HorizontalOptions="End" VerticalOptions="Center"
+                            Source="AgendaItemUncheck.png"/>
+                        </Grid>
+                    </Grid>
+                </StackLayout>
+
+                <StackLayout
+                    Margin="0,15,0,0"
+                    Spacing="0">
+                    <Grid
+                        RowSpacing="0" ColumnSpacing="0"
+                        Margin="13.7,0"
+                        HeightRequest="111">
+                        <BoxView
+                            Margin="14.9,0"
+                            Color="White"/>
+                        <Image
+                            HorizontalOptions="Start"
+                            Source="rightbox1.png"/>
+                        <Image
+                            HorizontalOptions="End"
+                            Source="leftbluebox.png"/>
+                        <Image
+                            HorizontalOptions="End"
+                            Source="speaker3.png"/>
+                        <Grid
+                            RowSpacing="0" ColumnSpacing="0"
+                            HorizontalOptions="End" VerticalOptions="End"
+                            IsVisible="False"
+                            >
+                            <Image
+                                Source="livered2.png"/>
+                            <Image
+                                HorizontalOptions="Start" VerticalOptions="Center"
+                                Margin="17,0,0,0"
+                                Source="ngvngvnv.png"/>
+                            <Label
+                                HorizontalOptions="End" VerticalOptions="Center"
+                                Margin="0,-2,18.8,0"
+                                Text="Live"
+                                TextColor="White"
+                                FontSize="15"
+                                FontAttributes="Bold"/>
+                        </Grid>
+
+                        <Grid
+                            RowSpacing="0" ColumnSpacing="0"
+                            Margin="14.9, 0, 82.8,0"
+                            >
+                            <StackLayout
+                                Orientation="Vertical"
+                                Spacing="0"
+                                >
+                                <Label
+                                    HeightRequest="39"
+                                    Margin="14,0,60,0"
+                                    Text="How to deal with responsive websites"
+                                    FontSize="16"
+                                    TextColor="#565656"/>
+                                <StackLayout
+                                    Orientation="Horizontal"
+                                    Margin="0,5,0,0"
+                                    Spacing="0"
+                                    >
+                                    <Image
+                                        Margin="14,0,0,0"
+                                        Source="bookmark.png"/>
+                                    <Label
+                                        Margin="4,0,0,0"
+                                        Text="Business"
+                                        FontSize="12"
+                                        />
+                                </StackLayout>
+                                <StackLayout
+                                    Orientation="Horizontal"
+                                    Margin="0,5,0,0"
+                                    Spacing="0"
+                                    >
+                                    <Image
+                                        Margin="14,0,0,0"
+                                        Source="wallclock.png"/>
+                                    <Label
+                                        Margin="4,0,0,0"
+                                        Text="10 AM - 12 AM"
+                                        FontSize="12"
+                                    />
+                                </StackLayout>
+                                <StackLayout
+                                    Orientation="Horizontal"
+                                    Margin="0,5,0,0"
+                                    Spacing="0"
+                                    >
+                                    <Image
+                                        Margin="14,0,0,0"
+                                        Source="placeholder.png"/>
+                                    <Label
+                                        Margin="4,0,0,0"
+                                        Text="Great Hall"
+                                        FontSize="12"
+                                    />
+                                </StackLayout>
+                            </StackLayout>
+                            <Image
+                            Margin="0,0,15,0"
+                            HorizontalOptions="End" VerticalOptions="Center"
+                            Source="AgendaItemUncheck.png"/>
+                        </Grid>
+                    </Grid>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+
+        <Grid
+            Grid.Row="3"
+            RowSpacing="0" ColumnSpacing="0"
+            >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <BoxView 
+                Grid.ColumnSpan="4"
+                Color="White"/>
+
+            <Image
+                Grid.Column="0"
+                Margin="0,8,0,0"
+                HorizontalOptions="Center" VerticalOptions="Start"
+                Source="home.png"/>
+            <Label
+                Grid.Column="0"
+                Margin="0,32,0,0"
+                HorizontalOptions="Center" VerticalOptions="Start"
+                Text="Home"
+                FontSize="12"/>
+
+            <Image
+                Grid.Column="1"
+                Margin="0,8,0,0"
+                HorizontalOptions="Center" VerticalOptions="Start"
+                Source="calendarselected.png"/>
+            <Label
+                Grid.Column="1"
+                Margin="0,32,0,0"
+                HorizontalOptions="Center" VerticalOptions="Start"
+                Text="Agenda"
+                TextColor="Black"
+                FontSize="12"/>
+
+            <Image
+                Grid.Column="2"
+                Margin="0,8,0,0"
+                HorizontalOptions="Center" VerticalOptions="Start"
+                Source="notifications.png"/>
+            <Label
+                Grid.Column="2"
+                Margin="0,32,0,0"
+                HorizontalOptions="Center" VerticalOptions="Start"
+                Text="Notifications"
+                FontSize="12"/>
+
+            <Image
+                Grid.Column="3"
+                Margin="0,8,0,0"
+                HorizontalOptions="Center" VerticalOptions="Start"
+                Source="more.png"/>
+            <Label
+                Grid.Column="3"
+                Margin="0,32,0,0"
+                HorizontalOptions="Center" VerticalOptions="Start"
+                Text="More"
+                TextColor="Black"
+                FontSize="12"/>
+        </Grid>
+    </Grid>
 </ContentPage>

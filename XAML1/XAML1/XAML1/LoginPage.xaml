@@ -49,12 +49,22 @@
                 RowSpacing="0" ColumnSpacing="0"
                 >
                 <Image
-                    Source="LoginButtonBackground.png"/>
+                    Source="LoginButtonBackground.png">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                             Tapped="TapGestureRecognizer_Tapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
                 <Label
                     HorizontalOptions="Center" VerticalOptions="Center"
                     Text="LOG IN"
                     TextColor="#1BA8EA"
-                    FontSize="15"/>
+                    FontSize="15">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer
+                             Tapped="TapGestureRecognizer_Tapped"/>
+                    </Label.GestureRecognizers>
+                </Label>
             </Grid>
             <Grid
                 Margin="0,24,0,0"

@@ -1,12 +1,163 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="XAML1.SpeakersPage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+             x:Class="XAML1.SpeakersPage"
+             Title="Speakers"
+             BackgroundColor="#EEEEEE">
+
+    <ScrollView
+        >
+        <Grid
+            RowSpacing="0" ColumnSpacing="0"
+            >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="250"/>
+                <RowDefinition Height="250"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid
+                Grid.Row="0" Grid.Column="0"
+                RowSpacing="0" ColumnSpacing="0"
+                WidthRequest="178"
+                Margin="0,8" 
+                HorizontalOptions="Center" VerticalOptions="Center"
+                >
+                <Image            
+                    Aspect="AspectFill"
+                    Source="FrameBottom.png"/>
+                <Image
+                    HorizontalOptions="Center" VerticalOptions="Start"
+                    Source="FRBackground.png"/>
+                <Image
+                    HorizontalOptions="Center" VerticalOptions="Start"
+                    Source="FrameImage.png"/>
+                <StackLayout
+                    Orientation="Vertical"
+                    HorizontalOptions="Center" VerticalOptions="End"
+                    Spacing="0" HeightRequest="64" WidthRequest="160"
+                    >
+                    <Label
+                        Margin="12.4,0,0,0"
+                        TextColor="#172232"
+                        FontSize="18"
+                        Text="Elon Musk"/>
+                    <Label
+                        Margin="12.4,0,0,0"
+                        TextColor="#79818B"
+                        FontSize="12"
+                        Text="Position"/>
+                </StackLayout>
+
+            </Grid>
+
+            <Grid
+                Grid.Row="0" Grid.Column="1"
+                RowSpacing="0" ColumnSpacing="0"
+                WidthRequest="178"
+                Margin="0,8" 
+                HorizontalOptions="Center" VerticalOptions="Center"
+                >
+                <Image            
+                    Aspect="AspectFill"
+                    Source="FrameBottom.png"/>
+                <Image
+                    HorizontalOptions="Center" VerticalOptions="Start"
+                    Source="FRBackground.png"/>
+                <Image
+                    HorizontalOptions="Center" VerticalOptions="Start"
+                    Source="FrameImage1.png"/>
+                <StackLayout
+                    Orientation="Vertical"
+                    HorizontalOptions="Center" VerticalOptions="End"
+                    Spacing="0" HeightRequest="64" WidthRequest="160"
+                    >
+                    <Label
+                        Margin="12.4,0,0,0"
+                        TextColor="#172232"
+                        FontSize="18"
+                        Text="Dann Petty"/>
+                    <Label
+                        Margin="12.4,0,0,0"
+                        TextColor="#79818B"
+                        FontSize="12"
+                        Text="Position"/>
+                </StackLayout>
+
+            </Grid>
+
+            <Grid
+                Grid.Row="1" Grid.Column="0"
+                RowSpacing="0" ColumnSpacing="0"
+                WidthRequest="178"
+                Margin="0,8" 
+                HorizontalOptions="Center" VerticalOptions="Center"
+                >
+                <Image            
+                    Aspect="AspectFill"
+                    Source="FrameBottom.png"/>
+                <Image
+                    HorizontalOptions="Center" VerticalOptions="Start"
+                    Source="FRBackground.png"/>
+                <Image
+                    HorizontalOptions="Center" VerticalOptions="Start"
+                    Source="FrameImage2.png"/>
+                <StackLayout
+                    Orientation="Vertical"
+                    HorizontalOptions="Center" VerticalOptions="End"
+                    Spacing="0" HeightRequest="64" WidthRequest="160"
+                    >
+                    <Label
+                        Margin="12.4,0,0,0"
+                        TextColor="#172232"
+                        FontSize="18"
+                        Text="Bill Gates"/>
+                    <Label
+                        Margin="12.4,0,0,0"
+                        TextColor="#79818B"
+                        FontSize="12"
+                        Text="Position"/>
+                </StackLayout>
+
+            </Grid>
+
+            <Grid
+                Grid.Row="1" Grid.Column="1"
+                RowSpacing="0" ColumnSpacing="0"
+                WidthRequest="178"
+                Margin="0,8" 
+                HorizontalOptions="Center" VerticalOptions="Center"
+                >
+                <Image            
+                    Aspect="AspectFill"
+                    Source="FrameBottom.png"/>
+                <Image
+                    HorizontalOptions="Center" VerticalOptions="Start"
+                    Source="FRBackground.png"/>
+                <Image
+                    HorizontalOptions="Center" VerticalOptions="Start"
+                    Source="FrameImage3.png"/>
+                <StackLayout
+                    Orientation="Vertical"
+                    HorizontalOptions="Center" VerticalOptions="End"
+                    Spacing="0" HeightRequest="64" WidthRequest="160"
+                    >
+                    <Label
+                        Margin="12.4,0,0,0"
+                        TextColor="#172232"
+                        FontSize="18"
+                        Text="Janice Yip"/>
+                    <Label
+                        Margin="12.4,0,0,0"
+                        TextColor="#79818B"
+                        FontSize="12"
+                        Text="Position"/>
+                </StackLayout>
+
+            </Grid>
+        </Grid>
+    </ScrollView>
 </ContentPage>

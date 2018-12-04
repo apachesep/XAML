@@ -1,12 +1,170 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="XAML1.SpeakerPage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+             x:Class="XAML1.SpeakerPage"
+             Title="Speaker">
+
+    <ScrollView
+        >
+        <StackLayout
+            Spacing="0"
+            Orientation="Vertical"
+            >
+            <Grid
+                RowSpacing="0" ColumnSpacing="0"
+                >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="367"/>
+                    <RowDefinition Height="30"/>
+                </Grid.RowDefinitions>
+                <Image
+                    VerticalOptions="Start"
+                    Aspect="AspectFill"
+                    Source="Speakerbackground.png"/>
+                <Image
+                    VerticalOptions="Start"
+                    Aspect="AspectFit"
+                    Source="SpeakerImg.png"/>
+                <Image
+                    Grid.RowSpan="2"
+                    VerticalOptions="End"
+                    Margin="0,0,0,0"
+                    Aspect="AspectFill"
+                    Source="SpeakerImgBtmMask.png"/>
+            </Grid>
+            <StackLayout
+                Spacing="0"
+                Margin="20,0"
+                >
+                <Label
+                    Text="Elon Musk"
+                    TextColor="Black"
+                    FontSize="40"/>
+                <Label
+                    Text="co-founder, CEO of Tesla Inc."
+                    TextColor="Black"
+                    FontSize="16"/>
+            </StackLayout>
+            <BoxView
+                    Margin="0,10"
+                    HeightRequest="1"
+                    Color="#818181"/>
+            <Label
+                Margin="25,7"
+                Text="SESSIONS"
+                FontSize="13"
+                TextColor="#172232"/>
+            
+            <StackLayout
+                Orientation="Vertical"
+                Spacing="0"
+                BackgroundColor="#EEEEEE"
+                Padding="0,23"
+                >
+                    <StackLayout
+                        Spacing="0">
+                        <Grid
+                        RowSpacing="0" ColumnSpacing="0"
+                        Margin="13.7,0"
+                        HeightRequest="111">
+                            <BoxView
+                            Margin="14.9,0"
+                            Color="White"/>
+                            <Image
+                            HorizontalOptions="Start"
+                            Source="rightbox1.png"/>
+                            <Image
+                            HorizontalOptions="End"
+                            Source="leftbluebox.png"/>
+                            <Image
+                            HorizontalOptions="End"
+                            Source="speaker5.png"/>
+                            <Grid
+                            RowSpacing="0" ColumnSpacing="0"
+                            HorizontalOptions="End" VerticalOptions="End"
+                            >
+                                <Image
+                                Source="livered2.png"/>
+                                <Image
+                                HorizontalOptions="Start" VerticalOptions="Center"
+                                Margin="17,0,0,0"
+                                Source="ngvngvnv.png"/>
+                                <Label
+                                HorizontalOptions="End" VerticalOptions="Center"
+                                Margin="0,-2,18.8,0"
+                                Text="Live"
+                                TextColor="White"
+                                FontSize="15"
+                                FontAttributes="Bold"/>
+                            </Grid>
+
+                            <Grid
+                            RowSpacing="0" ColumnSpacing="0"
+                            Margin="14.9, 0, 82.8,0"
+                            >
+                                <StackLayout
+                                Orientation="Vertical"
+                                Spacing="0"
+                                >
+                                    <Label
+                                    HeightRequest="39"
+                                    Margin="14,0,60,0"
+                                    Text="The story behind the Space X"
+                                    FontSize="16"
+                                    TextColor="#565656"/>
+                                    <StackLayout
+                                    Orientation="Horizontal"
+                                    Margin="0,5,0,0"
+                                    Spacing="0"
+                                    >
+                                        <Image
+                                        Margin="14,0,0,0"
+                                        Source="bookmark.png"/>
+                                        <Label
+                                        Margin="4,0,0,0"
+                                        Text="Business"
+                                        FontSize="12"
+                                        />
+                                    </StackLayout>
+                                    <StackLayout
+                                    Orientation="Horizontal"
+                                    Margin="0,5,0,0"
+                                    Spacing="0"
+                                    >
+                                        <Image
+                                        Margin="14,0,0,0"
+                                        Source="wallclock.png"/>
+                                        <Label
+                                        Margin="4,0,0,0"
+                                        Text="10 AM - 12 AM"
+                                        FontSize="12"
+                                    />
+                                    </StackLayout>
+                                    <StackLayout
+                                    Orientation="Horizontal"
+                                    Margin="0,5,0,0"
+                                    Spacing="0"
+                                    >
+                                        <Image
+                                        Margin="14,0,0,0"
+                                        Source="placeholder.png"/>
+                                        <Label
+                                        Margin="4,0,0,0"
+                                        Text="Great Hall"
+                                        FontSize="12"
+                                    />
+                                    </StackLayout>
+                                </StackLayout>
+                                <Image
+                            Margin="0,0,15,0"
+                            HorizontalOptions="End" VerticalOptions="Center"
+                            Source="AgendaItemUncheck.png"/>
+                            </Grid>
+                        </Grid>
+                    </StackLayout>
+
+                </StackLayout>
+
         </StackLayout>
-    </ContentPage.Content>
+    </ScrollView>
 </ContentPage>

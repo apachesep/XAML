@@ -16,5 +16,10 @@ namespace XAML1
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            Application.Current.MainPage = new MDPage();
+        }
+    }
 }
